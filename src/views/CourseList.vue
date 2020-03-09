@@ -1,9 +1,9 @@
 <template>
     <v-container>
-        <h1 class="text-center mb-2">Курсы Английского языка в Одессе</h1>
-        <v-list>
+        <h1 class="text-center mb-10 mt-8 display-1">Курсы Английского языка в Одессе</h1>
+        <v-flex >
             <CourseCard v-for="course in courseList" :key="course.id" :course="course"></CourseCard>
-        </v-list>
+        </v-flex>
     </v-container>
 </template>
 

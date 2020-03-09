@@ -1,16 +1,16 @@
 <template>
-    <v-card class="mb-3">
-        <v-card-title>{{ course.school }}</v-card-title>
-        <v-card-subtitle><a target="_blank" :href="course.schoolUrl">Перейти на сайт школы</a></v-card-subtitle>
-        <v-card-actions>
-            <v-btn
-                    text
-                    color="deep-purple accent-4"
-            >
-                Learn More
-            </v-btn>
-        </v-card-actions>
-    </v-card>
+    <v-hover v-slot:default="{ hover }">
+        <v-card class="mb-3" :elevation="hover ? 16 : 2">
+            <v-card-title>{{ course.school }}</v-card-title>
+            <v-card-subtitle><a target="_blank" :href="course.schoolUrl">Перейти на сайт школы</a></v-card-subtitle>
+            <v-card-text>
+
+            </v-card-text>
+            <v-card-actions>
+
+            </v-card-actions>
+        </v-card>
+    </v-hover>
 </template>
 
 <script>
