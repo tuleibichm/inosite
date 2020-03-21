@@ -1,7 +1,9 @@
 <template>
-  <v-content class="grey lighten-4">
-    <router-view/>
-  </v-content>
+  <main class="content">
+    <div class="container">
+      <router-view/>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -11,5 +13,8 @@
 </script>
 
 <style scoped>
-
+  .content{
+    display: flex;
+    flex-grow: 1;
+  }
 </style>

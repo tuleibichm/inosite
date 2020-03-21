@@ -1,6 +1,7 @@
 <template>
-  <v-footer class="justify-center">
-      <span>&copy; {{ newDate }}</span></v-footer>
+  <footer class="footer">
+      <span>&copy; {{ newDate }}</span>
+  </footer>
 </template>
 
 <script>

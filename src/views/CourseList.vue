@@ -1,10 +1,10 @@
 <template>
-    <v-container>
-        <h1 class="text-center mb-10 mt-8 display-1">Курсы Английского языка в Одессе</h1>
-        <v-flex >
+    <div class="courseList">
+        <h1 class="pageTitle">Курсы Английского языка в Одессе</h1>
+        <ul>
             <CourseCard v-for="course in courseList" :key="course.id" :course="course"></CourseCard>
-        </v-flex>
-    </v-container>
+        </ul>
+    </div>
 </template>
 
 <script>

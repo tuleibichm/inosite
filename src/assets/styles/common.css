@@ -1,0 +1,16 @@
+body{
+    font-family: 'Helvetica-Regular', sans-serif;
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    max-width: 1044px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.pageTitle{
+    text-align: center;
+    padding: 40px 0 50px;
+}
